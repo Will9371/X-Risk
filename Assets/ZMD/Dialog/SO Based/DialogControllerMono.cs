@@ -21,7 +21,7 @@ namespace ZMD.Dialog
     [Serializable]
     public class DialogController
     {
-        NarrativeHub narrative => NarrativeHub.instance;
+        //NarrativeHub narrative => NarrativeHub.instance;
     
         [SerializeField] DialogNode ending;
         [SerializeField] ResponseButtons response;
@@ -60,6 +60,7 @@ namespace ZMD.Dialog
         
         public Action<SO> onTriggerEvent;
         public Action onEventsComplete;
+        public Action<OccasionInfo> onOccasion;
         
         void Transition(int index)
         {
@@ -67,22 +68,22 @@ namespace ZMD.Dialog
                 return;
         
             node = node.GetNode(index);
-            
-            foreach (var character in node.castChanges)
-                narrative.SetActorImageActive(character.actor, character.active);
+            //foreach (var character in node.castChanges)
+            //    narrative.SetActorImageActive(character.actor, character.active);
             
             // UnityEvent based
             foreach (var item in node.events)
             {
                 onTriggerEvent?.Invoke(item);
-                narrative.onOccasion?.Invoke();
+                //narrative.onOccasion?.Invoke();  // ???
             }
 
             // SO/C# event based
             foreach (var occasion in node.occasions)
             {
                 occasion.Trigger();
-                narrative.MakeDecision(occasion);
+                //narrative.MakeDecision(occasion);
+                onOccasion?.Invoke(occasion);
             }
             
             if (node.occasions.Length > 0 || node.events.Length > 0)
@@ -92,10 +93,13 @@ namespace ZMD.Dialog
                 EndConversation();
         }
         
+        public Action onEndConversation;
+        
         void EndConversation()
         {
             inProgress = false;
-            narrative.onEndConversation?.Invoke(); 
+            //narrative.onEndConversation?.Invoke();
+            onEndConversation?.Invoke(); 
         }
         
         public void DisplayOptions() => response.Refresh(node);

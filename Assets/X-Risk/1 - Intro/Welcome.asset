@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  narrative: Welcome to X-Risk!  This is not a game, nor is it a fictional story. 
+    This is informational, but I am trying to make it approachable and, when possible,
+    entertaining.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: b3542cf41bf20ef4699161e17a0e78d7, type: 2}
+    response: Tell me about the controls
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 39d943c6fba830b4c9ebf8cb00eb4442, type: 2}
+    response: What's up with the illustrations?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: e0dbecc5e18c85b429adf8b229ee39a7, type: 2}
+    response: Is this biased?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 3e1b9e18330bdde4c8d2a0a24705c71a, type: 2}
+    response: Return to Chapter Select
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

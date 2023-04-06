@@ -1,9 +1,11 @@
 using UnityEngine;
-using ZMD.Dialog;
 
-public class SimpleDialogStart : MonoBehaviour
+namespace ZMD.Dialog
 {
-    [SerializeField] DialogControllerMono dialog;
-    [SerializeField] DialogNode startingNode;
-    void Start() => dialog.Begin(startingNode);
+    public class SimpleDialogStart : MonoBehaviour
+    {
+        [SerializeField] DialogControllerMono dialog;
+        [SerializeField] DialogNode startingNode;
+        void Start() => dialog.Begin(startingNode);
+    }
 }

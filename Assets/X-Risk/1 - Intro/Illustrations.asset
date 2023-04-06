@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Illustrations
+  m_EditorClassIdentifier: 
+  narrative: Most background art for this game is AI generated, in part to "illustrate"
+    just how far AI has advanced in recent years.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: a6ab73ad322e2d34a88607678b0c41aa, type: 2}
+    response: Wait, won't that put human artists of jobs?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

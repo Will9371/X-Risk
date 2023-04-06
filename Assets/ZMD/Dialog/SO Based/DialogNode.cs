@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using MyBox;
 
 namespace ZMD.Dialog
 {
@@ -9,6 +10,8 @@ namespace ZMD.Dialog
     {
         [Tooltip("Main text associated with this node")]
         public string narrative;
+        
+        public bool showConditionalResponses;
         
         [Tooltip("Options available to player in response to narrative")]
         public ResponseOptions[] responses;
@@ -39,10 +42,16 @@ namespace ZMD.Dialog
             return result;
         }
         
+        void OnValidate()
+        {
+            for (int i = 0; i < responses.Length; i++)
+                responses[i].showConditionalResponses = showConditionalResponses;
+        }
+        
         [Serializable] 
         public struct ResponseOptions
         {
-            List<OccasionInfo> playerDecisions => NarrativeHub.instance.decisions.occasions;
+            List<OccasionInfo> playerDecisions => Redirect.playerDecisions;
             
             [Tooltip("Next node if this option is selected")]
             public DialogNode node;
@@ -50,15 +59,21 @@ namespace ZMD.Dialog
             [Tooltip("Button text")]
             public string response;
             
+            [HideInInspector]
+            public bool showConditionalResponses;
+            
+            [ConditionalField(nameof(showConditionalResponses))]
             public OccasionRequirement logicalRequirement;
+            [ConditionalField(nameof(showConditionalResponses))]
             public RelationalRequirement relationalRequirement;
             public (bool, bool) RequirementsMet() => 
-                (logicalRequirement.IsMet(playerDecisions) && relationalRequirement.IsMet(), 
+                (!showConditionalResponses || 
+                logicalRequirement.IsMet(playerDecisions) && relationalRequirement.IsMet(), 
                 fallbackNode != null);
             
-            /// Future refactor: use fallback node if condition fails 
-            /// rather than adding a second option with a negative condition
+            [ConditionalField(nameof(showConditionalResponses))]
             public DialogNode fallbackNode;
+            [ConditionalField(nameof(showConditionalResponses))]
             public string fallbackResponse;
             
             public string GetResponse()

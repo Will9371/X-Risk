@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Artist Jobs
+  m_EditorClassIdentifier: 
+  narrative: This project is free, so the alternative would have been no art at all. 
+    For my other projects, like Oscillarium, I am employing artists and musicians
+    and paying them fairly.  But in general, yes, this is a big concern.  Even if
+    there remains a place for human artists, a great deal of commercial art doesn't
+    require the "human touch", meaning that there will be a lot fewer opportunities
+    for a profession that is already being squeezed hard by economics.  And that's
+    sad, because creating art is deeply fulfilling for many people and having it
+    be financially sustainable allows them to engage their passion much more deeply.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 61ac30d59ca8f254bac9300f0de93f68, type: 2}
+    response: Damn, that's heavy...and we are still in the tutorial?!
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

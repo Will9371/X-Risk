@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 // * Refactor: break into single responsibilities
+// * On reintegration with ZMD, move to game-specific folder
 namespace ZMD.Dialog
 {
     public class NarrativeHub : Singleton<NarrativeHub>
@@ -32,7 +33,12 @@ namespace ZMD.Dialog
         }
 
         public Action onOccasion;
-        public Action onEndConversation;
+        
+        public Action onEndConversation 
+        {
+            get => dialog.process.onEndConversation;
+            set => dialog.process.onEndConversation = value;
+        }
         
         void Start()
         {
@@ -40,6 +46,24 @@ namespace ZMD.Dialog
                 actor.person.Initialize();
             foreach (var actor in actors)
                 actor.person.RecalculateReputation(true);
+                
+            dialog.process.onSetNode += OnSetNode;
+            dialog.process.onOccasion += MakeDecision;
+        }
+        
+        void OnDestroy()
+        {
+            if (dialog) 
+            {
+                dialog.process.onSetNode -= OnSetNode;
+                dialog.process.onOccasion -= MakeDecision;
+            }
+        }
+
+        void OnSetNode(DialogNode node)
+        {
+            foreach (var character in node.castChanges)
+                SetActorImageActive(character.actor, character.active);
         }
         
         public Actor GetActor(ActorInfo id)

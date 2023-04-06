@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: X-Risk
+  m_EditorClassIdentifier: 
+  narrative: Just as an idea being in fiction doesn't make it true, an idea being
+    in fiction doesn't make it false.  But more importantly, there are many ideas
+    here that should all be considered independently.  Engage with the parts that
+    interest you, skip over the rest, that's why I made this interactive.  But if
+    you point to parts you think are silly to discredit parts that make you uncomfortable
+    then you are an asshole.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
+    response: Return to Welcome page
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: e0dbecc5e18c85b429adf8b229ee39a7, type: 2}
+    response: But aren't you biased?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000}
+    response: I love Sci-Fi!  Let's cut to the chase and talk about superintelligence
+      and x-risk!
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []
