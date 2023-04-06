@@ -16,8 +16,7 @@ public class ResponseButton : MonoBehaviour
         SetActive(true);
     }
     
-    //[HideInInspector] 
-    public int responseId;
+    [HideInInspector] public int responseId;
     void Start() => button.onClick.AddListener(OnClick);
     void OnClick() { onClick?.Invoke(responseId); }
     public Action<int> onClick;

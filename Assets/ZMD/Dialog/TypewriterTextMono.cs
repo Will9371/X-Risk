@@ -10,6 +10,7 @@ namespace ZMD
     {
         public TypewriterText process;
         public void Input(string value) => process.Input(this, value);
+        public void AutoComplete() => process.AutoComplete();
         
         void Start() => process.onComplete = OnComplete;
         void OnComplete() => onComplete.Invoke();
@@ -24,13 +25,24 @@ namespace ZMD
         [SerializeField] float speed = 10;
         
         public Action onComplete;
+        
+        MonoBehaviour mono;
+        IEnumerator typeRoutine;
+        bool inProgress;
 
-        public void Input(MonoBehaviour mono, string value) => mono.StartCoroutine(TypeText(value));
+        public void Input(MonoBehaviour mono, string value) 
+        {
+            this.mono = mono;
+            typeRoutine = TypeText(value);
+            mono.StartCoroutine(typeRoutine);
+        }
+        
         public IEnumerator TypeText(string value)
         {
             if (string.IsNullOrEmpty(value))
                 yield break;
         
+            inProgress = true;
             text.text = value;
 
             for (int i = 0; i <= value.Length; i++)
@@ -40,6 +52,16 @@ namespace ZMD
             }
             
             onComplete?.Invoke();
-        }        
+            inProgress = false;
+        }
+        
+        public void AutoComplete()
+        {
+            if (!inProgress) return;
+            mono.StopCoroutine(typeRoutine);
+            text.maxVisibleCharacters = text.text.Length;
+            onComplete?.Invoke();
+            inProgress = false;
+        }
     }
 }

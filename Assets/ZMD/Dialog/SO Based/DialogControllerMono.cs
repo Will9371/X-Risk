@@ -23,7 +23,6 @@ namespace ZMD.Dialog
     {
         NarrativeHub narrative => NarrativeHub.instance;
     
-        [SerializeField] GameObject display;
         [SerializeField] DialogNode ending;
         [SerializeField] ResponseButtons response;
         
