@@ -18,7 +18,7 @@ MonoBehaviour:
     identifier saying which circuit the rest of the signal should be directed towards.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: c5d0e5a6aaaf0db42951507ee31b3818, type: 2}
     response: Continue
     showConditionalResponses: 0
     logicalRequirement:

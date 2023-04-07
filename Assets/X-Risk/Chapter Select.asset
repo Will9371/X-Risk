@@ -37,6 +37,61 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
+  - node: {fileID: 11400000, guid: e5395e8c4e68af844bcb1c385ba6a168, type: 2}
+    response: What are the near-term benefits and risks of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 50358875c5ab97a41976909ae0d81934, type: 2}
+    response: What are the long-term benefits and risks of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: ddfda89b1b1ebd2469cc297ae3945ef2, type: 2}
+    response: Tell me about OpenAI, the creators of ChatGPT?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
+    response: How can we mitigate the risks of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 854ae8d7cc2e7f94aa5a752dd2b647c8, type: 2}
+    response: Is AI conscious?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
   castChanges: []
   occasions: []
   events: []

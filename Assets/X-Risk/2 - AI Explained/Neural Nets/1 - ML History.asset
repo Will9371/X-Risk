@@ -28,7 +28,7 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 0583d0fa141af8e4aa4b29ea01ec5360, type: 2}
     response: Skip to the good stuff!  Tell me about LLMs!
     showConditionalResponses: 0
     logicalRequirement:

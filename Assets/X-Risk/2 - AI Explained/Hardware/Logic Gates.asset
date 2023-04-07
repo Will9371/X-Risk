@@ -18,7 +18,7 @@ MonoBehaviour:
     blocks to build even more complex circuits, and so on.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 5988db6b53755484e8d1a196ccd93bb0, type: 2}
     response: Continue
     showConditionalResponses: 0
     logicalRequirement:

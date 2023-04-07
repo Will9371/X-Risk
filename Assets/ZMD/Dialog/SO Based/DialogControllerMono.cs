@@ -26,6 +26,7 @@ namespace ZMD.Dialog
         [SerializeField] DialogNode ending;
         [SerializeField] ResponseButtons response;
         
+        [SerializeField, ReadOnly]
         DialogNode _node;
         DialogNode node
         {
@@ -67,7 +68,13 @@ namespace ZMD.Dialog
             if (index >= node.responses.Length)
                 return;
         
-            node = node.GetNode(index);
+            var newNode = node.GetNode(index);
+            if (newNode == null)
+            {
+                Debug.LogError($"{node.name} missing response at index {index}");
+                return;
+            }
+            node = newNode;
             //foreach (var character in node.castChanges)
             //    narrative.SetActorImageActive(character.actor, character.active);
             

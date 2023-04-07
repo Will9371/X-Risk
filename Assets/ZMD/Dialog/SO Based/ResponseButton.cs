@@ -16,7 +16,8 @@ public class ResponseButton : MonoBehaviour
         SetActive(true);
     }
     
-    [HideInInspector] public int responseId;
+    //[HideInInspector] 
+    public int responseId;
     
     void Start() 
     {
@@ -29,4 +30,5 @@ public class ResponseButton : MonoBehaviour
     
     RectTransform rect;
     public void SetPosition(Vector2 position) => rect.anchoredPosition = position;
+    public void SetSize(Vector2 scale) => rect.sizeDelta = scale;
 }

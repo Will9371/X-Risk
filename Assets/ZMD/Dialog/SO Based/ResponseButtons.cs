@@ -42,8 +42,12 @@ namespace ZMD.Dialog
             }
 
             var buttonSetting = buttonSettings[validResponses.Count - 1];
+            //Debug.Log($"{validResponses.Count - 1}, {buttonSetting.anchoredPositions.Length}, {responses.Length}");
             for (int i = 0; i < buttonSetting.anchoredPositions.Length; i++)
+            {
                 responses[i].SetPosition(buttonSetting.anchoredPositions[i]);
+                responses[i].SetSize(buttonSetting.boxSize);
+            }
             
             foreach (var index in validResponses)
                 responses[index].Activate(node.GetResponse(index));
@@ -54,5 +58,6 @@ namespace ZMD.Dialog
     public struct ButtonSettings
     {
         public Vector2[] anchoredPositions;
+        public Vector2 boxSize;
     }
 }
