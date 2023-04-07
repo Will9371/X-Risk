@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
   m_Name: Transistors
   m_EditorClassIdentifier: 
-  narrative: 
+  narrative: It all starts with the humble transistor, an electrical component made
+    from silicon, with 3 wires leading in.  One wire is the gate, which when activated
+    by an electrical signal, allows electricity to pass from the input wire to the
+    output wire.
   showConditionalResponses: 0
   responses:
   - node: {fileID: 11400000, guid: 6a31ee6c8db3f8f46b8df6a8800e2c14, type: 2}

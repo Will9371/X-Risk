@@ -7,11 +7,10 @@ namespace ZMD.Dialog
     public class ResponseButtons : MonoBehaviour
     {
         [SerializeField] ResponseButton[] responses;
-        [SerializeField] ResponseButton singleResponse;
+        [SerializeField] ButtonSettings[] buttonSettings;
         
         void Start()
         {
-            singleResponse.onClick = OnClick;
             foreach (var response in responses)
                 response.onClick = OnClick;
             
@@ -27,7 +26,6 @@ namespace ZMD.Dialog
         
         void SetAllInactive()
         {
-            singleResponse.gameObject.SetActive(false);
             foreach (var response in responses)
                 response.gameObject.SetActive(false);
         }
@@ -35,11 +33,26 @@ namespace ZMD.Dialog
         public void Refresh(DialogNode node)
         {
             List<int> validResponses = node.GetValidResponses();
-                    
-            if (validResponses.Count == 1)
-                singleResponse.Activate(node.GetResponse(validResponses[0]));
-            else foreach (var index in validResponses)
+            
+            if (validResponses.Count == 0)
+            {
+                SetAllInactive();
+                Debug.LogError($"{node.name} has no valid responses");
+                return;
+            }
+
+            var buttonSetting = buttonSettings[validResponses.Count - 1];
+            for (int i = 0; i < buttonSetting.anchoredPositions.Length; i++)
+                responses[i].SetPosition(buttonSetting.anchoredPositions[i]);
+            
+            foreach (var index in validResponses)
                 responses[index].Activate(node.GetResponse(index));
         }
+    }
+    
+    [Serializable]
+    public struct ButtonSettings
+    {
+        public Vector2[] anchoredPositions;
     }
 }

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: 8 - LLMs
+  m_Name: 11 - RLHF
   m_EditorClassIdentifier: 
-  narrative: ChatGPT has a bunch of extra tricks.  First, it uses transformers (the
-    T in GPT), a technique where some layers have much fewer neurons...no one knows
-    why that helps, but it helps a lot.  ChatGPT is also trained in a 3-phase process
-    including self-supervised learning, finetuning, and RLHF.
+  narrative: RLHF stands for Reinforcement Learning Human Feedback.  This is another
+    phase of training that improves answer quality by giving the training process
+    a human touch.  The system gives multiple answers to questions and humans rate
+    which answers are the best ones.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 364ead6b4992dae4480806a0a5f03d52, type: 2}
-    response: What is self-supervised learning?
+  - node: {fileID: 0}
+    response: 
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
   m_Name: 9 - Self Supervised Learning
   m_EditorClassIdentifier: 
-  narrative: ChatGPT has a bunch of extra tricks.  First, it uses transformers (the
-    T in GPT), a technique where some layers have much fewer neurons...no one knows
-    why that helps, but it helps a lot.  ChatGPT is also trained in a 3-phase process
-    including self-supervised learning, finetuning, and RLHF.
+  narrative: During self-supervised learning, ChatGPT gathers massive amounts of
+    text from the internet (indiscriminately, more is better).  Then it takes sections
+    of text, redacts part of it, and tries to guess what was redacted.  Since it
+    knows the answer, it can use the error for training.  And because the whole process
+    is automated, it can get a lot of training data this way.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
-    response: What is self-supervised learning?
+  - node: {fileID: 11400000, guid: 6edb6a43f3e1bb04c970f08d1e80782d, type: 2}
+    response: You said finetuning comes next?  What's that?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

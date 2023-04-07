@@ -17,7 +17,16 @@ public class ResponseButton : MonoBehaviour
     }
     
     [HideInInspector] public int responseId;
-    void Start() => button.onClick.AddListener(OnClick);
+    
+    void Start() 
+    {
+        rect = transform as RectTransform;
+        button.onClick.AddListener(OnClick);
+    }
+
     void OnClick() { onClick?.Invoke(responseId); }
     public Action<int> onClick;
+    
+    RectTransform rect;
+    public void SetPosition(Vector2 position) => rect.anchoredPosition = position;
 }
