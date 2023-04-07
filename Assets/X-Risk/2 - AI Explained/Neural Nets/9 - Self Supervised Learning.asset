@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: 9 - Self Supervised Learning
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: ChatGPT has a bunch of extra tricks.  First, it uses transformers (the
+    T in GPT), a technique where some layers have much fewer neurons...no one knows
+    why that helps, but it helps a lot.  ChatGPT is also trained in a 3-phase process
+    including self-supervised learning, finetuning, and RLHF.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 0}
+    response: What is self-supervised learning?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

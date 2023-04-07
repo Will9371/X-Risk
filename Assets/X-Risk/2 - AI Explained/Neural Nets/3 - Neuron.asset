@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: 3 - Neuron
+  m_EditorClassIdentifier: 
+  narrative: Artificial neurons are inspired by the workings of neurons in the human
+    brain (but don't work quite the same way).  They take in a bunch of input signals,
+    multiply each of them by a "weight" (a number, usually between -1 and +1), add
+    all those weighted inputs together, add a "bias" (another number), and then run
+    the result through an activation function (a surprisingly uncomplicated mathematical
+    equation), and then send out the result to a bunch of other neurons, or the final
+    output of the system.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 5579d8498e648f14ba0d8b3107278682, type: 2}
+    response: How does it know what numbers to use for the weights and biases?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

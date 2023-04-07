@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: CPU - Instructions
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Now imagine a bunch of these electrical circuits arranged on a grid.
+    Each of them is connected by a switchboard (another basic circuit), so that you
+    can send a signal to any one of the circuits by using part of the signal as an
+    identifier saying which circuit the rest of the signal should be directed towards.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 0}
+    response: Continue
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

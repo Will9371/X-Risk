@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: 6a - Local Minima
+  m_EditorClassIdentifier: 
+  narrative: One problem is local minima.  Imagine a ball rolling down a hill.  The
+    lowest it can go is sea level, but most likely it will stop at the bottom of
+    a hole, or some place where every direction around it goes uphill.  The same
+    thing happens in ML, the system changes to decrease the error signal, but it
+    can easily get stuck with a set of weights and biases that isn't the best configuration,
+    but where any small change makes the output worse.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 95a466f6a91e5a445948f7166736317a, type: 2}
+    response: What does unrepresentative training mean?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 6094c46d154d5294a947bf37889f04ff, type: 2}
+    response: What is specification gaming?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 36b1d743c18f13c4098cd73e62832fd4, type: 2}
+    response: OK, problems aside, is this how text and image generators work?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

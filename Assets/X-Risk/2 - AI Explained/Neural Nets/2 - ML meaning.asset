@@ -10,24 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: 2 - ML meaning
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Machine learning is a technique that allows computers to learn without
+    being programmed.  It connects a bunch of artificial neurons together, adjusting
+    their weights and biases, to change how inputs are converted to outputs, based
+    on an error signal.   "Deep learning" refers to the way the neurons are organized
+    into multiple layers.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 6475b2edfe80e4b47bf540dcaba90e51, type: 2}
+    response: What actually happens in these "artificial neurons"?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

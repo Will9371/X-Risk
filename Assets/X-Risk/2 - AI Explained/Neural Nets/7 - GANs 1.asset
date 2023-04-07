@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Bias 3
+  m_Name: 7 - GANs 1
   m_EditorClassIdentifier: 
-  narrative: For example, when I illustrate Microsoft CEO Satya Nadella as a James
-    Bond villain, that is an example of bias.
+  narrative: To generate content with ML, engineers use a clevel trick called Generative
+    Adversarial Networks, or GANs.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: ff450fa17a272c743b88b2428c6e3570, type: 2}
-    response: That sounds kind of subtle, I'm not sure I will be able to separate
-      facts from opinions...
+  - node: {fileID: 11400000, guid: f7998a27cdcbc4b49a4e873c5dc7a9a8, type: 2}
+    response: '"Adversarial?!"  Is this where the machines rise up to overthrow us?'
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

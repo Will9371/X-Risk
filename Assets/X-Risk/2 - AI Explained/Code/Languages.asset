@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Languages
+  m_EditorClassIdentifier: 
+  narrative: greatly expanded the instructions available.  Then C allowed programmers
+    to create abstractions so they could say more with much less writing.  Then C++
+    created the idea of "object oriented" programming, which allowed programs to
+    be split up into smaller, interacting programs (some people think this was a
+    bad idea, but they're crazy).  Then C# (what this game is written in) automated
+    away lots of the annoying and repetitive parts of programming.  I've presented
+    this history as linear, but it actually has a lot of branches--there are a lot
+    of programming languages out there--but these are the core ideas.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 117c3005b2cb9d94496f7e5720c8ee2b, type: 2}
+    response: Continue
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

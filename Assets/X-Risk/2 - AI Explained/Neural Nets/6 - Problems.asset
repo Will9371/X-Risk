@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: 6 - Problems
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Local minima, unrepresentative training data, and specification gaming.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 11400000, guid: 09afa24741804c8499a5c81f2c53d948, type: 2}
+    response: What are local minima?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +26,19 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 95a466f6a91e5a445948f7166736317a, type: 2}
+    response: What does unrepresentative training mean?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 6094c46d154d5294a947bf37889f04ff, type: 2}
+    response: What is specification gaming?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

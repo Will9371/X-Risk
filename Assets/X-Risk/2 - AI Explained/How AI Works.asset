@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: How AI Works
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: '"AI", or Artificial Intelligence, is a catch-all term for seemingly
+    intelligent behavior performed by a computer, from the scripted behavior of NPCs
+    (non-playable characters) in video games to cutting edge systems like ChatGPT
+    based on neural networks.'
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 11400000, guid: bb34375a68aa70641acb220ef5465305, type: 2}
+    response: I'm new to all of this, tell me about how computers work in general.
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +29,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 4d23b393a4f7e444a86c67d2a2f3a8fe, type: 2}
+    response: I'm fairly tech-savvy, but I am not familiar with neural networks. 
+      How do those work?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

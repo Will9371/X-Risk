@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Bias 1
+  m_Name: 7 - GANs 3
   m_EditorClassIdentifier: 
-  narrative: Of course!  But what does that mean?  Having opinions is not bias. 
-    Bias is being systematically wrong in a predictable direction.  I try to minimize
-    bias as much as possible, but I'm not perfect.  In particular, estimating personal
-    certainty is hard, so the most likely kind of bias you will see here is overconfident
-    opinions.
+  narrative: At first, the discriminator guesses at random and fails.  But as it
+    gets better, the generator has to improve to continue to fool it, which forces
+    the discriminator to continue improving.  Eventually, the generator gets so good
+    that there simply is no way for the discriminator to win because the generated
+    images look just like the real ones.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 0a59c65341377bb43b7a4791678b7650, type: 2}
-    response: Continue
+  - node: {fileID: 11400000, guid: 0583d0fa141af8e4aa4b29ea01ec5360, type: 2}
+    response: So is this how ChatGPT works?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

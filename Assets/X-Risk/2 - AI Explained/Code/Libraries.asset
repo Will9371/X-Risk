@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: Libraries
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: When an abstraction is really useful, people share it, and it becomes
+    a tool everyone can use it and people don't have to keep reinventing the wheel. 
+    In general, the more useful and rigorously tested a piece of software is, the
+    more readily available it becomes.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: f3095d5b34da447469ba01619632a42b, type: 2}
+    response: Continue
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

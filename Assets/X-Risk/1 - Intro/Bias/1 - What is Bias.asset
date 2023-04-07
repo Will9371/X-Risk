@@ -10,24 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: 1 - What is Bias
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Of course!  But what does that mean?  Having opinions is not bias. 
+    Bias is being systematically wrong in a predictable direction.  I try to minimize
+    bias as much as possible, but I'm not perfect.  In particular, estimating personal
+    certainty is hard, so the most likely kind of bias you will see here is overconfident
+    opinions.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 0a59c65341377bb43b7a4791678b7650, type: 2}
+    response: Continue
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

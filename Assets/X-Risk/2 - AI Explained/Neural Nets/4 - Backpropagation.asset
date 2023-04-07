@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: 4 - Backpropagation
+  m_EditorClassIdentifier: 
+  narrative: During training, when an input signal passes through all the neurons
+    in the network and produces a result, that result is compared to what the result
+    should be.  The difference generates an error signal, which backpropagates (moves
+    backwards) through the network, telling each neuron to adjust its weights and
+    bias in a way that decreases the error.  Eventually, the network settles on a
+    set of weights and biases where it can't decrease the error any further.  This
+    process is called "gradient descent".
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 09afa24741804c8499a5c81f2c53d948, type: 2}
+    response: Wait, if the network has to know the correct answers to improve, how
+      is that useful?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

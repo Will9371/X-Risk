@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: 5 - Training vs Deployment 1
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Neural networks are trained on labelled data (where the correct answer
+    is known), but when training is complete they will have learned patterns in the
+    data that allow them to give good responses to inputs it has never seen before. 
+    There are, however, some problems...
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 11400000, guid: 7cb1e0a6e2b927f468e0f3d1607b0b6d, type: 2}
+    response: What sort of problems?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +29,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 36b1d743c18f13c4098cd73e62832fd4, type: 2}
+    response: Never mind the problems.  So is this how text and image generators
+      work?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

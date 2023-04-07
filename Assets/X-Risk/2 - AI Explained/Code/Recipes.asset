@@ -10,24 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: Recipes
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: But none of these changes make any difference to the computer.  Modern
+    languages, with all their fancy abstractions, get compiled (automatically translated)
+    into assembly language, which gets translated into machine code.  No matter how
+    advanced computers get, it's all just recipes, all the way down.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 4d23b393a4f7e444a86c67d2a2f3a8fe, type: 2}
+    response: OK, so what's the deal with Neural Networks?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Bias 2
+  m_Name: Abstractions
   m_EditorClassIdentifier: 
-  narrative: Most of this is a summary of existing literature, but there is some
-    opinion mixed in. I will try my best to be clear when I am giving an opinion.
+  narrative: The main trick is abstraction.  If you take a sequence of instructions
+    that describe a broadly useful process, you can package those instructions together
+    and use them as a group, without worrying about what's going on with all the
+    individual steps.  It's like when you are walking, you don't think about all
+    the muscles you are using, you just think about high-level stuff like where you
+    are going and how fast you want to move.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 78b3b892368d3f2409e6d9885d1687cd, type: 2}
+  - node: {fileID: 11400000, guid: 3480a8017c0f3704697a4f613b5de486, type: 2}
     response: Continue
     showConditionalResponses: 0
     logicalRequirement:

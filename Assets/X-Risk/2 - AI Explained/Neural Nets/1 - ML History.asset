@@ -10,14 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Bias 5
+  m_Name: 1 - ML History
   m_EditorClassIdentifier: 
-  narrative: No.  The best thing is to expose yourself to as many sources as possible
-    and use your own judgment.  To help, I've also included hyperlinks to my sources.
+  narrative: In the early days of AI research, there were many competing techniques. 
+    Machine Learning (ML) using Deep Learning ultimately won out when the cost of
+    computer hardware fell enough for the approach to be viable at scale.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: Return to Welcome page.
+  - node: {fileID: 11400000, guid: 6c3538c5a2a9db04d9d1607643a870ad, type: 2}
+    response: What is Machine Learning?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 0}
+    response: Skip to the good stuff!  Tell me about LLMs!
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
