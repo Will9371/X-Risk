@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 namespace ZMD.Dialog
 {
@@ -32,6 +31,7 @@ namespace ZMD.Dialog
         //NarrativeHub narrative => NarrativeHub.instance;
     
         [SerializeField] DialogNode ending;
+        [SerializeField] DialogNode error;
         [SerializeField] ResponseButtons response;
         
         [SerializeField, ReadOnly]
@@ -80,10 +80,8 @@ namespace ZMD.Dialog
             var newNode = node.GetNode(index);
             if (newNode == null)
             {
-                // TBD: display error to user (facilitate error reporting)
-                // And include back button to get out of error state
-                Debug.LogError($"{node.name} missing response at index {index}");
-                return;
+                error.narrative = $"{node.name} missing response at index {index}";
+                newNode = error;
             }
             node = newNode;
             history.Add(newNode);

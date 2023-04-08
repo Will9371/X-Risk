@@ -70,7 +70,7 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
+  - node: {fileID: 0}
     response: How can we mitigate the risks of AI?
     showConditionalResponses: 0
     logicalRequirement:

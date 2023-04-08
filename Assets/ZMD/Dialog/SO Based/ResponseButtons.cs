@@ -38,7 +38,6 @@ namespace ZMD.Dialog
             if (validResponses.Count == 0)
             {
                 SetAllInactive();
-                Debug.LogError($"{node.name} has no valid responses");
                 return;
             }
 
