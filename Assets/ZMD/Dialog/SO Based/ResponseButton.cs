@@ -16,8 +16,7 @@ public class ResponseButton : MonoBehaviour
         SetActive(true);
     }
     
-    //[HideInInspector] 
-    public int responseId;
+    [ReadOnly] public int responseId;
     
     void Start() 
     {

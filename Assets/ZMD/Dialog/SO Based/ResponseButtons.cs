@@ -32,6 +32,7 @@ namespace ZMD.Dialog
 
         public void Refresh(DialogNode node)
         {
+            SetAllInactive();
             List<int> validResponses = node.GetValidResponses();
             
             if (validResponses.Count == 0)
@@ -52,8 +53,14 @@ namespace ZMD.Dialog
             foreach (var index in validResponses)
                 responses[index].Activate(node.GetResponse(index));
         }
+        
+        void OnValidate()
+        {
+            for (int i = 0; i < responses.Length; i++)
+                responses[i].responseId = i;
+        }
     }
-    
+
     [Serializable]
     public struct ButtonSettings
     {

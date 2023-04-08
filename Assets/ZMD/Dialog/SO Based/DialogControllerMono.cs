@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace ZMD.Dialog
 {
@@ -16,6 +17,13 @@ namespace ZMD.Dialog
         void OnSetNode(DialogNode value) => RelayNode.Invoke(value);
 
         [SerializeField] DialogNodeEvent RelayNode;
+        [SerializeField] UnityEvent goBack;
+        
+        public void GoBack() 
+        {
+            process.GoBack();
+            goBack.Invoke();
+        }
     }
     
     [Serializable]
@@ -47,7 +55,8 @@ namespace ZMD.Dialog
             
             Initialize();
             node = startingNode;
-            
+            history.Add(startingNode);
+
             inProgress = true;
         }
 
@@ -71,13 +80,22 @@ namespace ZMD.Dialog
             var newNode = node.GetNode(index);
             if (newNode == null)
             {
+                // TBD: display error to user (facilitate error reporting)
+                // And include back button to get out of error state
                 Debug.LogError($"{node.name} missing response at index {index}");
                 return;
             }
             node = newNode;
+            history.Add(newNode);
             //foreach (var character in node.castChanges)
             //    narrative.SetActorImageActive(character.actor, character.active);
             
+            ApplyEvents();
+        }
+
+        /// Events, Occasions, and Ending
+        void ApplyEvents()
+        {
             // UnityEvent based
             foreach (var item in node.events)
             {
@@ -94,10 +112,10 @@ namespace ZMD.Dialog
             }
             
             if (node.occasions.Length > 0 || node.events.Length > 0)
-                onEventsComplete?.Invoke();
-            
+                onEventsComplete?.Invoke();  
+                
             if (node == ending)
-                EndConversation();
+                EndConversation();          
         }
         
         public Action onEndConversation;
@@ -110,5 +128,15 @@ namespace ZMD.Dialog
         }
         
         public void DisplayOptions() => response.Refresh(node);
+        
+        [SerializeField]
+        DialogHistory history = new();
+        
+        public void GoBack()
+        {
+            var newNode = history.GoBack();
+            if (newNode == null) return;
+            node = newNode;
+        }
     }
 }
