@@ -874,9 +874,20 @@ MonoBehaviour:
     - {x: -195, y: -55}
     - {x: 195, y: -55}
     boxSize: {x: 380, y: 100}
-  - anchoredPositions: []
-    boxSize: {x: 380, y: 100}
-  - anchoredPositions: []
+  - anchoredPositions:
+    - {x: -195, y: 95}
+    - {x: 195, y: 95}
+    - {x: -195, y: 40}
+    - {x: 195, y: 40}
+    - {x: -195, y: -15}
+    boxSize: {x: 380, y: 50}
+  - anchoredPositions:
+    - {x: -195, y: 95}
+    - {x: 195, y: 95}
+    - {x: -195, y: 40}
+    - {x: 195, y: 40}
+    - {x: -195, y: -15}
+    - {x: 195, y: -15}
     boxSize: {x: 380, y: 50}
   - anchoredPositions:
     - {x: -195, y: 95}

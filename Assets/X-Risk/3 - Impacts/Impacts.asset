@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Impacts
+  m_EditorClassIdentifier: 
+  narrative: AI has the potential to be a hugely valuable tool, but it also has dangers
+    that some people are worried about.  I will refer to attempts to solve near-term
+    problems, such as societal disruptions and existing systems not working as intended,
+    as "safety" and efforts to prevent long-term problems, like superintelligent
+    AI systems destoying humanity, as "alignment".
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: e5395e8c4e68af844bcb1c385ba6a168, type: 2}
+    response: What are the near-term risks of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 50358875c5ab97a41976909ae0d81934, type: 2}
+    response: What are the long-term dangers of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 077b55d132a93794686c0df941c73f30, type: 2}
+    response: What are the potential benefits of AI?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []
