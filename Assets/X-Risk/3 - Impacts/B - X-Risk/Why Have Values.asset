@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Why Have Values
+  m_EditorClassIdentifier: 
+  narrative: A "goal" is just shorthand for a tendency to act in a way that makes
+    some things more likely than others.  To have "goals" does not require "wanting
+    things" in a way that remotely resembles human experience.  For example, it makes
+    sense to say that ChatGPT has the "goal" of predicting text because that's what
+    it does and we don't know what internal logic it is following.  The whole point
+    of AI is to do things without requiring humans to specify the process, so we
+    can assume AI will have goals.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 4b617149c13e5d74682717c9bb251922, type: 2}
+    response: Why would anyone build an AI with destructive goals?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: ca2317ba8b3ff7641b1eaba034085303, type: 2}
+    response: Couldn't we just turn the AI off if it starts misbehaving?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

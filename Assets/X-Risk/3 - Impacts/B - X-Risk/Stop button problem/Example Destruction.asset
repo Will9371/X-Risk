@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Example Destruction
+  m_EditorClassIdentifier: 
+  narrative: An AI has to be connected to the world in some way in order to be useful
+    and every such connection is a potential lever to gain power.  Chatbots talk
+    to humans and therefore can persuade and manipulate them into things.  AI that
+    designs medicines could also design toxins.  AI that controls machinery could
+    also use that machinery to build tools or weapons for its own use.  AI that manages
+    a business or invests in the stock market could under-report how much money it
+    has accumulated, keeping the remainder to pay for human cooperation on secret
+    projects.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: e022bf1a217ddb24aa81cbbb64ec6768, type: 2}
+    response: This all sounds like science fiction...
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 0}
+    response: Those all sound vague, can you give a specific example?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

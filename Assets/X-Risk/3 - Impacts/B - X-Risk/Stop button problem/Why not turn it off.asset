@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Why not turn it off
+  m_EditorClassIdentifier: 
+  narrative: An AI "off switch" may not be enough to avert catastrophe if we ignore
+    the early warning signals until the AI becomes powerful enough to prevent us
+    from shutting it off
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 251a3fb346e92494e93d154bc99ab8db, type: 2}
+    response: Why would we ignore early warning signals?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 243b9c245db08ce4c9dd21a0dca917c3, type: 2}
+    response: How would an AI prevent us from shutting it off?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

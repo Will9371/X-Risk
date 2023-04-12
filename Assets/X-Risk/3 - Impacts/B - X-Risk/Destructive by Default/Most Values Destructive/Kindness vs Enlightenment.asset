@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Kindness vs Enlightenment
+  m_EditorClassIdentifier: 
+  narrative: Human kindness exists as a consequence of our unique evolutionary history. 
+    Enlightenment involves realizing the implications of one's existing values and
+    learning how to meet them better.  Human moral progress (arguable to begin with,
+    is modern, western society superior to indigenous cultures?) has not come from
+    growing better souls, but from dispelling myths and social structures that prevented
+    our innate kindness from expressing itself.  AI, not having our evolutionary
+    history, could want anything.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 0}
+    response: AI will adopt the values of its creators.
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 0}
+    response: We'll figure it out...
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

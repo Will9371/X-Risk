@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Specification Gaming
+  m_EditorClassIdentifier: 
+  narrative: Specification gaming is when something does what you tell it in a way
+    you did not expect that runs contrary to your intent.  For example, an AI trained
+    to play Tetris with the goal of lasting as long as possible will learn to pause
+    the game indefinitely.  And a chatbot trained by human feedback to answer questions
+    truthfully will learn to prefer to tell lies that its audience thinks are true
+    over truths that sound implausible.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 8d8b156dc654c0040989f46fa58b2204, type: 2}
+    response: Why give the AI goals at all?  What if the AI doesn't care about or
+      value anything, but just does what its told?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 4b617149c13e5d74682717c9bb251922, type: 2}
+    response: What are some other reasons AI may be dangerous by default?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

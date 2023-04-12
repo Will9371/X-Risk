@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Long Term X-Risk
+  m_Name: Malice
   m_EditorClassIdentifier: 
-  narrative: X-risk (existential risk) refers to a catastrphoic event that causes
-    human extinction.  X-risk is not limited to AI, but also includes other massively
-    destructive events, such as large-scale nuclear war, runaway global warming,
-    a giant meteor, a sufficiently deadly pandemic, and so on.  I am focusing on
-    AI as a source of x-risk because it seems to be on the shortest timeline and
-    because, if aligned successfully, could be used to mitigate other sources of
-    x-risk.
+  narrative: Even if AI remains a tool that empowers people, some people are...not
+    nice.  Terrorists could create deadly bioweapons, governments could create vastly
+    more effective propaganda, thieves could more better scams, and whoever owns
+    the AI systems could use their position to further concentrate wealth and power
+    in the hands of a few.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: e9edfa69e10f1b24e9f082a6ecb66ed0, type: 2}
-    response: How is AI an x-risk?
+  - node: {fileID: 11400000, guid: a3fd097b54df0e84aab157bea50125fb, type: 2}
+    response: Every new technology has the potential for misuse.  Eventually, society
+      finds a way to deal with the bad actors and people are better off in the long
+      run.
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

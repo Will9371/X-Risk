@@ -10,19 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Long Term X-Risk
+  m_Name: Adopt Human Values
   m_EditorClassIdentifier: 
-  narrative: X-risk (existential risk) refers to a catastrphoic event that causes
-    human extinction.  X-risk is not limited to AI, but also includes other massively
-    destructive events, such as large-scale nuclear war, runaway global warming,
-    a giant meteor, a sufficiently deadly pandemic, and so on.  I am focusing on
-    AI as a source of x-risk because it seems to be on the shortest timeline and
-    because, if aligned successfully, could be used to mitigate other sources of
-    x-risk.
+  narrative: 
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: e9edfa69e10f1b24e9f082a6ecb66ed0, type: 2}
-    response: How is AI an x-risk?
+  - node: {fileID: 0}
+    response: 
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
