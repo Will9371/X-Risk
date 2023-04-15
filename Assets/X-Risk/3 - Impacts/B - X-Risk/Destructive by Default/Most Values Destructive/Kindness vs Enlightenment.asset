@@ -21,7 +21,7 @@ MonoBehaviour:
     history, could want anything.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: b87ecd686a4ae4d49a60796ac76c7e17, type: 2}
     response: AI will adopt the values of its creators.
     showConditionalResponses: 0
     logicalRequirement:
@@ -32,7 +32,7 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 0242390322acd04489a7310267940ce5, type: 2}
     response: We'll figure it out...
     showConditionalResponses: 0
     logicalRequirement:

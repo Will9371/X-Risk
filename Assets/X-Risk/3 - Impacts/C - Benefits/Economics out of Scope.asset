@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Figure it out
+  m_Name: Economics out of Scope
   m_EditorClassIdentifier: 
-  narrative: I hope so!  But the state of alignment research isn't looking too good
-    right now...
+  narrative: That's out of scope for this conversation, sorry to disappoint.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
-    response: Who is working on AI alignment?  What is their plan and what progress
-      have they made?
+  - node: {fileID: 11400000, guid: 077b55d132a93794686c0df941c73f30, type: 2}
+    response: Alas, it seems this verbal joust must wait another day...what are some
+      other potential benefits of AI?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

@@ -23,6 +23,19 @@ namespace ZMD.Dialog
             process.GoBack();
             goBack.Invoke();
         }
+        
+        #region Process Relays
+        public Action<SO> onEvent
+        {
+            get => process.onTriggerEvent;
+            set => process.onTriggerEvent = value;
+        }
+        public Action<DialogNode> onSetNode
+        {
+            get => process.onSetNode;
+            set => process.onSetNode = value;
+        }
+        #endregion
     }
     
     [Serializable]

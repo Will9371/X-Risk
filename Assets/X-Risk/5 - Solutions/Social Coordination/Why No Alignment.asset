@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Why No Alignment
+  m_EditorClassIdentifier: 
+  narrative: Technological development is usually empirical.  You try something,
+    it fails, you learn from the failure, you try again with improved understanding,
+    and this cycle repeats until you find something that works.  But when the thing
+    you are testing is a theory for how to not kill everyone, this empirical approach
+    doesn't work because life doesn't have a "reset" button.  On the other hand,
+    aligning systems that don't exist yet is hard and no one seems to even have a
+    clear idea as to where to start.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: e6b53853faf6f3147bebb3286d9b6a34, type: 2}
+    response: We have advanced AI now, can't we learn from that?  It may not be the
+      full picture, but it's a start and could point us in the right direction.
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: cc579beb2ed847842a59b8424119ee79, type: 2}
+    response: Alignment can't be THAT hard.  Surely someone is working on it...
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: ca2317ba8b3ff7641b1eaba034085303, type: 2}
+    response: Can't we just shut AI off if it starts causing problems?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

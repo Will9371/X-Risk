@@ -32,6 +32,18 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
+  - node: {fileID: 11400000, guid: 4284b117cf6fce64b9d9e8d0c669ea25, type: 2}
+    response: Maybe the extinction of humanity isn't so bad.  Maybe we should humbly
+      step aside and let the next phase of evolution replace us...
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
   castChanges: []
   occasions: []
   events: []

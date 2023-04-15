@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Figure it out
+  m_Name: Death is OK
   m_EditorClassIdentifier: 
-  narrative: I hope so!  But the state of alignment research isn't looking too good
-    right now...
+  narrative: Do you really believe that?  Would you prefer that the children of today
+    have no future?  That not just humans, but everything we value (like kindness,
+    truth, and beauty) be snuffed out forever?  Even if so, I strongly disagree and
+    suspect you are in a tiny minority.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
-    response: Who is working on AI alignment?  What is their plan and what progress
-      have they made?
+  - node: {fileID: 11400000, guid: 3d06818d67e9eb54992f387d81058d85, type: 2}
+    response: But what if this is all part of God's plan?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
