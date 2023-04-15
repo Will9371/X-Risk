@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a8f76a50ad921845b358ee3a664f395, type: 3}
-  m_Name: ZMD - AI Explained
+  m_Name: ZMD - AI Consciousness
   m_EditorClassIdentifier: 
-  message: Zen Marmot Digital, Neural Networks, Lensa, and the Past, Present, and
-    Future of Computing.
-  hyperlink: https://www.zenmarmotdigital.com/blog/neural-networks-lensa-and-the-past-present-and-future-of-computing
+  message: Zen Marmot Digital, AI is Probably Sentient
+  hyperlink: https://www.zenmarmotdigital.com/blog/ai-is-probably-sentient

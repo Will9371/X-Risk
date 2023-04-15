@@ -25,6 +25,7 @@ public class DisplayCitations : MonoBehaviour
     {
         list.Clear();
         citationCount = node.events.Length;
+        gameObject.SetActive(citationCount > 0);
         
         foreach (var entry in node.events)
         {
