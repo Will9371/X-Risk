@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Instrumental Convergence 1
+  m_Name: X-Risk Legitimacy
   m_EditorClassIdentifier: 
-  narrative: Instrumental convergence is the theory that certain things, such as
-    survival, are necessary to obtain almost anything else.  Therefore, any agent
-    intelligent enough to be aware of these necessary things will treat them as sub-goals,
-    regardless of what they intrinsically care about.
+  narrative: AI as an existential threat to humanity is a controversial topic, with
+    leading experts on both sides of the debate, but there is a near-consensus that
+    AI safety in general should be taken seriously.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 4924c977e7c296641992bef331c14939, type: 2}
-    response: Why does this matter?
+  - node: {fileID: 11400000, guid: e9edfa69e10f1b24e9f082a6ecb66ed0, type: 2}
+    response: How is AI an x-risk?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -32,5 +31,7 @@ MonoBehaviour:
   castChanges: []
   occasions: []
   events:
-  - {fileID: 11400000, guid: 511980a858dabe5478722f893e8d333a, type: 2}
+  - {fileID: 11400000, guid: efbd3d2d2db19a74aa235c63dd5a331c, type: 2}
   - {fileID: 11400000, guid: 958423652c2f93244a32affc63d9cdaf, type: 2}
+  - {fileID: 11400000, guid: f81c2c0549506c843aeb11a80b34065d, type: 2}
+  - {fileID: 11400000, guid: 831a5c6e63c029746a15bb061525f572, type: 2}

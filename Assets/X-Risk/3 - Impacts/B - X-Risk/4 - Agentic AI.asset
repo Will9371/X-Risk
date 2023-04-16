@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Instrumental Convergence 1
+  m_Name: 4 - Agentic AI
   m_EditorClassIdentifier: 
-  narrative: Instrumental convergence is the theory that certain things, such as
-    survival, are necessary to obtain almost anything else.  Therefore, any agent
-    intelligent enough to be aware of these necessary things will treat them as sub-goals,
-    regardless of what they intrinsically care about.
+  narrative: 'Perhaps, but there is already a great deal of progress on making AI
+    act more like agents.  AutoGPT, based on GPT-4, generates a series of prompts
+    for itself based on a user-supplied end goal.  Google '
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 4924c977e7c296641992bef331c14939, type: 2}
-    response: Why does this matter?
+  - node: {fileID: 11400000, guid: 50358875c5ab97a41976909ae0d81934, type: 2}
+    response: Return to X-Risk
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -31,6 +30,4 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events:
-  - {fileID: 11400000, guid: 511980a858dabe5478722f893e8d333a, type: 2}
-  - {fileID: 11400000, guid: 958423652c2f93244a32affc63d9cdaf, type: 2}
+  events: []
