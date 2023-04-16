@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Instrumental Convergence 1
+  m_Name: Credits
   m_EditorClassIdentifier: 
-  narrative: Instrumental convergence is the theory that certain things, such as
-    survival, are necessary to obtain almost anything else.  Therefore, any agent
-    intelligent enough to be aware of these necessary things will treat them as sub-goals,
-    regardless of what they intrinsically care about.
+  narrative: This project was created by Will Petillo.  Check out some of the other
+    things I have made in the citations.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 4924c977e7c296641992bef331c14939, type: 2}
-    response: Why does this matter?
+  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
+    response: Return
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -32,4 +30,8 @@ MonoBehaviour:
   castChanges: []
   occasions: []
   events:
-  - {fileID: 11400000, guid: 511980a858dabe5478722f893e8d333a, type: 2}
+  - {fileID: 11400000, guid: 770d0ca5d2c6b914c8678a255e1a8282, type: 2}
+  - {fileID: 11400000, guid: dcf2c3b96d9d0534882c6cd399a6ed24, type: 2}
+  - {fileID: 11400000, guid: 23cdf73b0a5b8964eac28f5a7b739518, type: 2}
+  - {fileID: 11400000, guid: f40fc2b7b85204f429ed4f9883f948cc, type: 2}
+  - {fileID: 11400000, guid: 93977b76e4b3fbc4799660ce3b0111e8, type: 2}

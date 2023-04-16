@@ -5,6 +5,7 @@ public class OpenClosePanel : MonoBehaviour
 {
     [SerializeField] RectTransform box;
     [SerializeField] RectTransform list;
+    [SerializeField] float moveSpeed = 1f;
 
     bool _isOpen;
     public bool isOpen
@@ -27,9 +28,8 @@ public class OpenClosePanel : MonoBehaviour
 
     public void Toggle() => isOpen = !isOpen;
     
-    /// TBD: move continuously
     void Update()
     {
-        height = targetHeight;
+        height = Mathf.MoveTowards(height, targetHeight, Time.deltaTime * moveSpeed);
     }
 }

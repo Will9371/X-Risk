@@ -32,4 +32,5 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: cea3c90cd5348b24a8d99a357f005301, type: 2}

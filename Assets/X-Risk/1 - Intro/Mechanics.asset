@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   narrative: Left-click to auto-complete typewriter text.  Press H to hide/unhide
     text and options.  Click on hyperlinks to view citations in a seperate browser
-    window.  Press the back button to return to the previous page.
+    window.  Press the back button to return to the previous page.  Some pages have
+    citations, click the tab in the bottom center of the screen to open/close the
+    citations list, and then click on the text of a citation to follow the hyperlink
   showConditionalResponses: 0
   responses:
   - node: {fileID: 11400000, guid: 57c6d0fc2475c574b80c5eacd8435733, type: 2}
@@ -31,4 +33,5 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: 0c419c0ddfd999f42b2209f7bb9da826, type: 2}

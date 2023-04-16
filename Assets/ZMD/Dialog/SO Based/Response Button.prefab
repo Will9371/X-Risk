@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dab750b72a4322418e948735ba95c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rect: {fileID: 5872938104243839048}
   button: {fileID: 5872938104243839049}
   text: {fileID: 3790311516283835205}
   responseId: 0

@@ -38,7 +38,7 @@ MonoBehaviour:
     fallbackNode: {fileID: 0}
     fallbackResponse: 
   - node: {fileID: 11400000, guid: 311efa3d9f098544caa91b003e132722, type: 2}
-    response: What are the near-term benefits and risks of AI?
+    response: What are the benefits and risks of AI?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

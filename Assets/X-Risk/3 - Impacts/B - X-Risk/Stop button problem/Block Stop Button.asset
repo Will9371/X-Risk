@@ -15,7 +15,7 @@ MonoBehaviour:
   narrative: When AI has reached a high enough level of intelligence, it will be
     able to anticipate human efforts to shut it down and prevent that from happening. 
     Such an AI might pretend to be aligned while quietly gaining power, only to use
-    it when we are unable to stop it.
+    that power when we are unable to stop it.
   showConditionalResponses: 0
   responses:
   - node: {fileID: 11400000, guid: 2f5d633d4f4b6774989779e66b46497c, type: 2}

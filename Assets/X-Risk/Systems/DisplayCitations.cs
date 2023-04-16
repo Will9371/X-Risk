@@ -21,11 +21,11 @@ public class DisplayCitations : MonoBehaviour
         if (panel) panel.onChangeOpen -= RefreshTabText;
     }
     
-    void SetNode(DialogNode node)
+    public void SetNode(DialogNode node)
     {
         list.Clear();
         citationCount = node.events.Length;
-        gameObject.SetActive(citationCount > 0);
+        SetActive(citationCount > 0);
         
         foreach (var entry in node.events)
         {
@@ -45,5 +45,11 @@ public class DisplayCitations : MonoBehaviour
     {
         var clickAction = panel.isOpen ? "(click to close)" : "(click to open)";
         notification.text = $"Citations: {citationCount} {clickAction}";        
+    }
+    
+    void SetActive(bool value)
+    {
+        list.gameObject.SetActive(value);
+        panel.gameObject.SetActive(value);
     }
 }

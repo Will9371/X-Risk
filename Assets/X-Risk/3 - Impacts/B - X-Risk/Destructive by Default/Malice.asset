@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   narrative: Even if AI remains a tool that empowers people, some people are...not
     nice.  Terrorists could create deadly bioweapons, governments could create vastly
-    more effective propaganda, thieves could more better scams, and whoever owns
+    more effective propaganda, thieves could devise better scams, and whoever owns
     the AI systems could use their position to further concentrate wealth and power
-    in the hands of a few.
+    in the hands of a few...or some idiot might straight-up ask an AI to destroy
+    the world.
   showConditionalResponses: 0
   responses:
   - node: {fileID: 11400000, guid: a3fd097b54df0e84aab157bea50125fb, type: 2}
@@ -34,4 +35,5 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: 8482fc61513ffc34c9c19265926c53b2, type: 2}

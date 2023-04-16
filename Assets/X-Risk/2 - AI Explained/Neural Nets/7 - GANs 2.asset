@@ -18,7 +18,7 @@ MonoBehaviour:
     trying to imitate, let's say cat photos) and images created by the generator.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: b7b73343e3f1d3d45a077a69afc34fe4, type: 2}
     response: Then what happens?
     showConditionalResponses: 0
     logicalRequirement:

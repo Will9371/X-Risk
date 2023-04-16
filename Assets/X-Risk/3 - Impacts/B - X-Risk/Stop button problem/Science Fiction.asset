@@ -18,8 +18,8 @@ MonoBehaviour:
     to work reliably.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 0}
-    response: 
+  - node: {fileID: 11400000, guid: 3e1b9e18330bdde4c8d2a0a24705c71a, type: 2}
+    response: Return to Chapter Select
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -31,4 +31,5 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: a778446ed0b40a041bb0879eb63fde9c, type: 2}
