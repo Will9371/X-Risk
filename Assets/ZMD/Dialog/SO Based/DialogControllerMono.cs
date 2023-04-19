@@ -93,7 +93,7 @@ namespace ZMD.Dialog
             var newNode = node.GetNode(index);
             if (newNode == null)
             {
-                error.narrative = $"{node.name} missing response at index {index}";
+                error.narrative = $"'{node.name}' node missing response at index {index}";
                 newNode = error;
             }
             node = newNode;

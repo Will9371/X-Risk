@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: X-Risk
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: AI is on track to gain superhuman abilities, AI is not on track to be
+    reliably aligned prior to gaining superhuman abilities, superhuman & unaligned
+    AI kills everyone.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 0}
+    response: AI is not going to become superhuman anytime soon
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +28,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 4338c18aa638a7d4d8c869937740b07c, type: 2}
+    response: Alignment is not a problem, or if it is then we are on track to solving
+      it
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -37,8 +40,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 9ed8340171cd96e4886a40a109940590, type: 2}
-    response: Tell me about x-risk
+  - node: {fileID: 11400000, guid: b3d1ebfba1288d64fbf4605224cd5d9d, type: 2}
+    response: "Superhuman & unaligned AI won\u2019t kill everyone"
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -48,8 +51,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
-    response: How can we mitigate the risks of AI?
+  - node: {fileID: 0}
+    response: I reject this entire framing.
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

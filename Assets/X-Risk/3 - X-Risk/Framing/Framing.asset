@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: Framing
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: What is wrong with this framing?
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 11400000, guid: e022bf1a217ddb24aa81cbbb64ec6768, type: 2}
+    response: This all sounds like science fiction!
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +26,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: 51a8561f219351242adf376757b94246, type: 2}
+    response: Speculation is nonsense.  We can't predict the future, so there is
+      no point in trying.
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -37,8 +38,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 9ed8340171cd96e4886a40a109940590, type: 2}
-    response: Tell me about x-risk
+  - node: {fileID: 0}
+    response: This is all too abstract, I need examples!
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -48,8 +49,20 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
-    response: How can we mitigate the risks of AI?
+  - node: {fileID: 11400000, guid: d3f1141619dedf142a55538a8c0180c8, type: 2}
+    response: "You don\u2019t know what you\u2019re talking about; this isn\u2019t
+      how computers work!"
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 0}
+    response: I refuse to live in fear
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

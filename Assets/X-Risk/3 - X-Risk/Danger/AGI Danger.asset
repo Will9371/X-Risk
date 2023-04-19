@@ -10,13 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: AGI Danger
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: Intelligence is the superpower that enabled humanity to dominate the
+    world.  If an AI has significantly more intelligence than humanity, it can leverage
+    that to rapidly gain an increasing share of the world's resources, technology,
+    weapons, plans, and anything else that would give it power to impose its values
+    on the world.  If those values are best satisfied in a world that doesn't include
+    humans...no more us.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 0}
+    response: "Intelligence isn\u2019t THAT powerful"
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +31,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 11400000, guid: ca2317ba8b3ff7641b1eaba034085303, type: 2}
+    response: We can just shut AI down if it starts causing problems
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -37,8 +42,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 9ed8340171cd96e4886a40a109940590, type: 2}
-    response: Tell me about x-risk
+  - node: {fileID: 0}
+    response: AIs will compete with each other; checks and balances will keep them
+      in line
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -48,8 +54,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
-    response: How can we mitigate the risks of AI?
+  - node: {fileID: 0}
+    response: AIs will still place some value on humans existing.  Maybe we will
+      be their pets?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -61,4 +68,5 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: 26cace7dac4dd17488fd6ff9a23c670c, type: 2}

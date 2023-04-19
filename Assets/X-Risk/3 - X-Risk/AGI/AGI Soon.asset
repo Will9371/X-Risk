@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Chapter Select
+  m_Name: AGI Soon
   m_EditorClassIdentifier: 
-  narrative: 'Chapter Select:'
+  narrative: It is very hard to set a timeline on technology.  But considering the
+    rate at which AI has advanced in the last few years, it seems highly plausible
+    that we will get to superhuman-level AI in decades (perhaps even years!), not
+    centuries.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 2cdea103756cb03408a847935f946ba9, type: 2}
-    response: About / Tutorial
+  - node: {fileID: 11400000, guid: 51a8561f219351242adf376757b94246, type: 2}
+    response: Extrapolation is nonsense!  No one can predict the future so we shouldn't
+      bother trying.
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -26,8 +30,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: f2eadfbe991f99146ba185766c4663f8, type: 2}
-    response: So how does AI work, exactly?
+  - node: {fileID: 0}
+    response: "Current systems aren\u2019t really that impressive..."
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -37,19 +41,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 9ed8340171cd96e4886a40a109940590, type: 2}
-    response: Tell me about x-risk
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
-    response: How can we mitigate the risks of AI?
+  - node: {fileID: 0}
+    response: "There is still a very long way to go\u2026"
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

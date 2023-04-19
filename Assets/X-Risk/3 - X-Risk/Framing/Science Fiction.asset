@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Science Fiction
+  m_EditorClassIdentifier: 
+  narrative: The topic is how to prepare for technology that doesn't exist yet, of
+    course it sounds like science fiction!  But if we want this to stay science fiction,
+    we need to make sure that advanced AI is carefully engineered to work reliably.
+  showConditionalResponses: 0
+  responses: []
+  castChanges: []
+  occasions: []
+  events:
+  - {fileID: 11400000, guid: a778446ed0b40a041bb0879eb63fde9c, type: 2}

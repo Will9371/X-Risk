@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Instrumental Convergence 2
+  m_EditorClassIdentifier: 
+  narrative: 'Consider some other generally useful instrumental goals besides survival:
+    accumulation of resources and power, elimination of threats, and self-improvement. 
+    Now imagine an AI that, because of specification gaming and Goodhart''s law,
+    most wants something other than human wellbeing, such as some abstract representation
+    of humans giving positive feedback.  It will have a built-in incentive to make
+    itself more powerful, convert all matter it can reach into copies of the thing
+    it wants, and kill any humans who might try to stop it.  Not because it hates
+    us, but because we are made of atoms that could be used for something else.'
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 8d8b156dc654c0040989f46fa58b2204, type: 2}
+    response: Why give the AI goals at all?  What if the AI doesn't care about or
+      value anything, but just does what its told?
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events:
+  - {fileID: 11400000, guid: 511980a858dabe5478722f893e8d333a, type: 2}
+  - {fileID: 11400000, guid: 958423652c2f93244a32affc63d9cdaf, type: 2}
