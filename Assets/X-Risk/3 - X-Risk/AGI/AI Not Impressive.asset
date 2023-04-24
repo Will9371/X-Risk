@@ -10,26 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Fear
+  m_Name: AI Not Impressive
   m_EditorClassIdentifier: 
-  narrative: This isn't about living in fear, it's about knowing what's going on
-    so that we can take informed action
+  narrative: We don't know enough about intelligence to say anything of the sort
+    with confidence.  As AI systems have scaled up, new and surprising behvaiors
+    have emerged, with new and surprising side-effects.  Superhuman AI could be close,
+    or it could be a long ways off. It would be irresponsible to rely on a lucky
+    roll of the dice we need to be prepared for all possibilities.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: fa1cb26940ed86242966039dda9bf5c2, type: 2}
-    response: What sort of action?  How can I help?
-    showConditionalResponses: 0
-    logicalRequirement:
-      requirements: []
-      invert: 0
-    relationalRequirement:
-      requirements: []
-      invert: 0
-    fallbackNode: {fileID: 0}
-    fallbackResponse: 
-  - node: {fileID: 11400000, guid: 15a1c1741e0f6ae4786cf81860236546, type: 2}
-    response: Just thinking about these things depresses me.  I don't want to hear
-      about it.
+  - node: {fileID: 0}
+    response: 
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

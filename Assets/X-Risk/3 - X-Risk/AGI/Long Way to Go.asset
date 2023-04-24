@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Long Way to Go
+  m_EditorClassIdentifier: 
+  narrative: We don't know enough about intelligence to say anything of the sort
+    with confidence.  As AI systems have scaled up, new and surprising behvaiors
+    have emerged, with new and surprising side-effects.  Superhuman AI could be close,
+    or it could be a long ways off. It would be irresponsible to rely on a lucky
+    roll of the dice we need to be prepared for all possibilities.  Besides, existing
+    AI systems already raise important questions for society, such has the ethics
+    of autonomous weapons and how to deal with mass unemployment.  We ought to be
+    addressing these issues now, before making even more powerful systems with even
+    bigger impacts.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: 2f9b67a5ec923194697c3dafd976eb7b, type: 2}
+    response: That's what I'm saying!  Why are we worrying about the far future when
+      the REAL concern is what's happening now!
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events: []

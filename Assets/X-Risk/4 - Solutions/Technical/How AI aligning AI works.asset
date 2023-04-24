@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: How AI aligning AI works
+  m_EditorClassIdentifier: 
+  narrative: The AI would generate proposals for alignment, which would be rated
+    by (AI-assisted) human reviewers, which would serve as reinforcement to create
+    better proposals.  This strategy is based on the assumptions that alignment is
+    easier to evaluate than generate and that systems capable of generating necessary
+    alignment insights won't be so powerful as to have already needed to be aligned
+    themselves.
+  showConditionalResponses: 0
+  responses: []
+  castChanges: []
+  occasions: []
+  events:
+  - {fileID: 11400000, guid: fcd069b99596e674baaaa37bcade5ff6, type: 2}

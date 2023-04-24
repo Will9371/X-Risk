@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: 1 - Solving Alignment
+  m_Name: Uncertainty
   m_EditorClassIdentifier: 
-  narrative: There are two core challenges with AI alignment.  The first is the technical
-    challenge of instilling reliably human compatible values into an AI that stay
-    aligned as the AI becomes more powerful.  The second is the social coordination
-    challenge of ensuring that the technical challenge of AI alignment is solved
-    before AI becomes powerful enough to cause trouble.
+  narrative: OK, but why does uncertainty make things better?  If you are building
+    a rocket, would you expect a random mistake to make the rocket more accurate
+    or more efficient?  The crux of this argument is that AI needs to be more reliable
+    than it is.  Chaos doesn't take you closer to reliability!
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: cc579beb2ed847842a59b8424119ee79, type: 2}
-    response: How can I help with the technical challenge of AI alignment?
+  - node: {fileID: 11400000, guid: babce1f06fb50ce40919722a69646959, type: 2}
+    response: AI destroying the world seems like such a wild conclusion...
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -30,8 +29,9 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 9ce185cef6d80a240a88f84872c1e8db, type: 2}
-    response: How can I help with social coordination?
+  - node: {fileID: 11400000, guid: fabf63e9339892e4ba86d815ef6158b2, type: 2}
+    response: Shouldn't the default assumption be that things stay as they are until
+      there is a reason to assume otherwise?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

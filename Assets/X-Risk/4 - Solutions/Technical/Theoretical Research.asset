@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: Disengagement
+  m_Name: Theoretical Research
   m_EditorClassIdentifier: 
-  narrative: That's fine, no one is forcing you to engage.  Just close the application
-    and walk away.  But if you aren't going to engage, please don't be publically
-    dismissive or otherwise get in the way of people who are trying to help
+  narrative: Under construction, check the citation for a link to the AI Alignment
+    Forum, where much of the relevant research is being publically shared.
   showConditionalResponses: 0
   responses: []
   castChanges: []
   occasions: []
-  events: []
+  events:
+  - {fileID: 11400000, guid: 0ec11befca953e747865b15ebfed506b, type: 2}

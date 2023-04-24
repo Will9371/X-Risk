@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: AGI Soon
+  m_Name: Align Existing
   m_EditorClassIdentifier: 
-  narrative: It is very hard to set a timeline on technology.  But considering the
-    rate at which AI has advanced in the last few years, it seems highly plausible
-    that we will get to superhuman-level AI in decades (perhaps even years!), not
-    centuries.
+  narrative: OpenAI approach to aligning AI is to develop a language model to the
+    point where it can solve alignment for us.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 51a8561f219351242adf376757b94246, type: 2}
-    response: Extrapolation is nonsense!  No one can predict the future so we shouldn't
-      bother trying.
+  - node: {fileID: 11400000, guid: 84ecd7e34020e414486f343d81a3938c, type: 2}
+    response: Wait, seriously?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -30,8 +27,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 1657cb5a39a69ab4cb55eeea5ec5a461, type: 2}
-    response: "Current systems aren\u2019t really that impressive..."
+  - node: {fileID: 11400000, guid: 68d3df782c7fe204c8143a36568fce31, type: 2}
+    response: How would that work?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -41,8 +38,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: e0b148a157ac7374cbcc5bfb017f85f4, type: 2}
-    response: "There is still a very long way to go\u2026"
+  - node: {fileID: 11400000, guid: 89bb4f010d925ae419f8bdb9be5b864a, type: 2}
+    response: What is OpenAI?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -55,4 +52,5 @@ MonoBehaviour:
   castChanges: []
   occasions: []
   events:
-  - {fileID: 11400000, guid: ad75798fd6853354a9be7715c64d7996, type: 2}
+  - {fileID: 11400000, guid: fcd069b99596e674baaaa37bcade5ff6, type: 2}
+  - {fileID: 11400000, guid: 53287f8dcc9bf554baf47894e265cb7a, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Regulation - 1
+  m_EditorClassIdentifier: 
+  narrative: What are you reacting to?  There aren't any proposals being considered
+    for legislation yet!  Sure, there are many hypothetical regulations that could
+    backfire or cause undesirable side effects that are worse than the problems they
+    (fail to) solve, but there may also be ideas that make sense.  Now is the time
+    for us to figure out what those are.
+  showConditionalResponses: 0
+  responses:
+  - node: {fileID: 11400000, guid: b82b0e217094ffd439d216696f7097a5, type: 2}
+    response: NO!  REGULATION BAD!!!
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  castChanges: []
+  occasions: []
+  events:
+  - {fileID: 11400000, guid: 9101c39541fff6041975562b2226546f, type: 2}

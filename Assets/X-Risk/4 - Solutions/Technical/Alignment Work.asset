@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
-  m_Name: AGI Soon
+  m_Name: Alignment Work
   m_EditorClassIdentifier: 
-  narrative: It is very hard to set a timeline on technology.  But considering the
-    rate at which AI has advanced in the last few years, it seems highly plausible
-    that we will get to superhuman-level AI in decades (perhaps even years!), not
-    centuries.
+  narrative: There's aligning existing systems, interpretability, and theoretical
+    research.
   showConditionalResponses: 0
   responses:
-  - node: {fileID: 11400000, guid: 51a8561f219351242adf376757b94246, type: 2}
-    response: Extrapolation is nonsense!  No one can predict the future so we shouldn't
-      bother trying.
+  - node: {fileID: 11400000, guid: 20f88bcc56184224d910aa21df982c2a, type: 2}
+    response: What is being done to align existing systems?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -30,8 +27,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: 1657cb5a39a69ab4cb55eeea5ec5a461, type: 2}
-    response: "Current systems aren\u2019t really that impressive..."
+  - node: {fileID: 11400000, guid: 186ae14cc311c6c449ce28898c7423d3, type: 2}
+    response: What is interpretability?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -41,8 +38,8 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 11400000, guid: e0b148a157ac7374cbcc5bfb017f85f4, type: 2}
-    response: "There is still a very long way to go\u2026"
+  - node: {fileID: 11400000, guid: 4698a41205d3aad4b9822c9c5c7d8f24, type: 2}
+    response: What sort of theoretical research?
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []
@@ -54,5 +51,4 @@ MonoBehaviour:
     fallbackResponse: 
   castChanges: []
   occasions: []
-  events:
-  - {fileID: 11400000, guid: ad75798fd6853354a9be7715c64d7996, type: 2}
+  events: []

@@ -51,7 +51,7 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 332d082168000f64f8ad9862f6e04f3f, type: 2}
     response: I reject this entire framing.
     showConditionalResponses: 0
     logicalRequirement:

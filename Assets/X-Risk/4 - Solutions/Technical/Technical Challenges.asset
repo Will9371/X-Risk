@@ -29,7 +29,7 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 7b5884649c015504ca13e009097e136a, type: 2}
     response: OK, but what work IS happening?
     showConditionalResponses: 0
     logicalRequirement:
