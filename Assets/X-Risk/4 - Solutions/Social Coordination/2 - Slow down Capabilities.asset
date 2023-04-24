@@ -39,8 +39,20 @@ MonoBehaviour:
       invert: 0
     fallbackNode: {fileID: 0}
     fallbackResponse: 
-  - node: {fileID: 0}
+  - node: {fileID: 11400000, guid: 2a953df75ed1f6440b77be5ecfb72a25, type: 2}
     response: REGULATION BAD!!!
+    showConditionalResponses: 0
+    logicalRequirement:
+      requirements: []
+      invert: 0
+    relationalRequirement:
+      requirements: []
+      invert: 0
+    fallbackNode: {fileID: 0}
+    fallbackResponse: 
+  - node: {fileID: 11400000, guid: 70850fe1f5eec2346b29c62cdfac6775, type: 2}
+    response: What does it matter what I think?  Why does anything matter?  This
+      is all so depressing...
     showConditionalResponses: 0
     logicalRequirement:
       requirements: []

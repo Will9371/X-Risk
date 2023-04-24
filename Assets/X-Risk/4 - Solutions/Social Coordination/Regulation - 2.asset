@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df6a31ec318a254eae9af3311b7aaaf, type: 3}
+  m_Name: Regulation - 2
+  m_EditorClassIdentifier: 
+  narrative: The AI coordination problem is, at its heart, a democracy problem. 
+    AI, and the values instilled into it, will affect everyone...but who gets to
+    decide how it's built?  Right now, the answer is a very small number of people
+    at high tech companies.  It doesn't have to be that way.  An informed and motivated
+    public can put pressure on governments and corporations to shape policy that
+    serves us all.  The first thing we have to overcome is the lie that we have no
+    power.
+  showConditionalResponses: 0
+  responses: []
+  castChanges: []
+  occasions: []
+  events: []
